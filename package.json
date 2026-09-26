@@ -1,0 +1,46 @@
+{
+  "name": "@moonbagfi/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript client for the Moonbag public API on Robinhood Chain: rounds, signed quotes, settlements, burns and payoff math.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "example": "tsx examples/basic-usage.ts"
+  },
+  "peerDependencies": {
+    "viem": "^2.56.9"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "viem": "^2.56.9"
+  },
+  "keywords": [
+    "moonbag",
+    "robinhood-chain",
+    "stock-tokens",
+    "sdk",
+    "viem"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moonbagfi/moonbag-integrations.git"
+  }
+}
